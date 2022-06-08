@@ -4,6 +4,7 @@
     <dimen name="body_1">40sp</dimen>
     <dimen name="body_2">38sp</dimen>
     <dimen name="body_3">34sp</dimen>
+    <dimen name="body_4">24sp</dimen>
 
 
     <dimen name="margin_button_arrow">35dp</dimen>

@@ -23,7 +23,7 @@ class AboutGameFragment : Fragment() {
         return binding.root
     }
 
-    fun navigateToStartGame() {
+    private fun navigateToStartGame() {
         binding.ibArrow.setOnClickListener {
             findNavController().navigate(R.id.action_fragAboutGame_to_fragStartGame)
         }

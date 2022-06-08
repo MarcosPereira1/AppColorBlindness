@@ -20,11 +20,12 @@
     <color name="text_5_about">#7500D0</color>
 
     <!--   Start Game -->
-
     <color name="background_start_game">#E9E9FF</color>
     <color name="text_start_game">#7199A6</color>
     <color name="icon_start_game">#007470</color>
     <color name="arrow_color_start_game">#8A57F6</color>
 
-
+    <!--   Input Name -->
+    <color name="arrow_color_input_name">#85005D</color>
+    <color name="text_question_input_name">#BF62A2</color>
 </resources>

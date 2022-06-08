@@ -60,6 +60,11 @@
             app:destination="@id/fragAgeGroup"
             app:popUpTo="@id/fragInputName"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_fragInputName_to_fragStartGame"
+            app:destination="@id/fragStartGame"
+            app:popUpTo="@id/fragInputName"
+            app:popUpToInclusive="true"/>
     </fragment>
 
     <fragment

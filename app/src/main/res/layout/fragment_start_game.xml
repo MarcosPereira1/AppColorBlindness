@@ -10,9 +10,9 @@
             android:id="@+id/shapeStartGame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
             android:elevation="0dp"
             android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
             android:src="@drawable/ic_shape_start_game"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
