@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppColorBlindness</string>
+    <string name="welcome">Bem vindo(a) ao Jogo das Cores!</string>
 </resources>

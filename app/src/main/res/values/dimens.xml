@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Size text Dimens-->
+    <dimen name="body_1">40sp</dimen>
+
+
+    <dimen name="margin_button_arrow">35dp</dimen>
+</resources>
