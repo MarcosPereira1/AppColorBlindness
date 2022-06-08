@@ -5,17 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.appcolorblindness.databinding.FragmentAboutBinding
+import com.example.appcolorblindness.databinding.FragmentAboutGameBinding
 
 
-class AboutFragment : Fragment() {
-    private lateinit var binding: FragmentAboutBinding
+class AboutGameFragment : Fragment() {
+    private lateinit var binding: FragmentAboutGameBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentAboutBinding.inflate(inflater, container, false)
+        binding = FragmentAboutGameBinding.inflate(inflater, container, false)
 
         return binding.root
     }
