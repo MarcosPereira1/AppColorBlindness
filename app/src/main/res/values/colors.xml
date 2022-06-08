@@ -28,4 +28,8 @@
     <!--   Input Name -->
     <color name="arrow_color_input_name">#85005D</color>
     <color name="text_question_input_name">#BF62A2</color>
+
+    <!--   Age Group-->
+    <color name="background_age_group">#C9CFFFFD</color>
+    <color name="arrow_back_age_group">#019C97</color>
 </resources>
