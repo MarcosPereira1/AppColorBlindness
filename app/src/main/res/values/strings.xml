@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">AppColorBlindness</string>
     <string name="welcome">Bem vindo(a) ao Jogo das Cores!</string>
+    <string name="text1_about">Este jogo tem o objetivo de ajudar na detecção do</string>
+    <string name="daltonismo">daltonismo</string>
+    <string name="de_forma">De forma</string>
+    <string name="interativa">interativa</string>
+    <string name="e">e</string>
 </resources>

@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.example.appcolorblindness.R
 import com.example.appcolorblindness.databinding.FragmentWelcomeBinding
 
 class WelcomeFragment : Fragment() {
@@ -15,7 +17,14 @@ class WelcomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentWelcomeBinding.inflate(inflater, container, false)
+        navigateToAbout()
 
         return binding.root
+    }
+
+    fun navigateToAbout() {
+        binding.ibArrow.setOnClickListener {
+            findNavController().navigate(R.id.action_fragWelcome_to_fragAboutGame)
+        }
     }
 }
