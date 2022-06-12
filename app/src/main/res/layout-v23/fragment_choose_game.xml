@@ -3,14 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-        <variable
-            name="data"
-            type="com.example.appcolorblindness.data.models.ColorBlindnessObservable" />
-
-        <import type="android.view.View"/>
-    </data>
-
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -23,10 +15,10 @@
                 android:id="@+id/shape"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:elevation="0dp"
-                android:scaleType="fitCenter"
                 android:src="@drawable/ic_shape_backgroungd_home"
+                android:scaleType="fitCenter"
+                android:elevation="0dp"
+                android:adjustViewBounds="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -46,13 +38,12 @@
                 android:id="@+id/escolhaFaixaEtaria"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="30dp"
                 android:fontFamily="@font/fredoka_one_regular"
                 android:gravity="center"
-                android:text="@={data.username}"
-                android:hint="Olá nome, escolha o jogo"
                 android:maxLines="2"
+                android:layout_marginHorizontal="30dp"
                 android:shadowColor="@color/shadow_text_welcome"
+                android:hint="Olá nome, escolha o jogo"
                 android:textColor="@color/arrow_back_age_group"
                 android:textSize="@dimen/body_4"
                 app:layout_constraintStart_toEndOf="@id/ibArrowBackChooseGame"
@@ -74,12 +65,11 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="70dp"
                 android:backgroundTint="@android:color/transparent"
-                android:foreground="?android:attr/selectableItemBackground"
                 android:src="@drawable/ic_bnt_test_geometrics"
+                android:foreground="?android:attr/selectableItemBackground"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/escolhaFaixaEtaria"
-                tools:ignore="UnusedAttribute" />
+                app:layout_constraintTop_toBottomOf="@id/escolhaFaixaEtaria" />
 
             <ImageButton
                 android:id="@+id/ibBtnTestAnimals"
@@ -100,7 +90,6 @@
                 android:layout_marginBottom="20dp"
                 android:backgroundTint="@android:color/transparent"
                 android:src="@drawable/ic_bnt_test_number"
-                android:visibility="@={data.has5years ? View.VISIBLE : View.GONE}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/ibBtnTestAnimals"
                 app:layout_constraintStart_toStartOf="@id/ibBtnTestAnimals"
