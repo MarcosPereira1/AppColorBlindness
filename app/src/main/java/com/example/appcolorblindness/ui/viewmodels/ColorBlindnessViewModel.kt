@@ -7,8 +7,4 @@ class ColorBlindnessViewModel : ViewModel() {
     val usernameLiveData: MutableLiveData<String> by lazy {
         MutableLiveData("")
     }
-
-    val has5yearLiveData: MutableLiveData<Boolean> by lazy {
-        MutableLiveData()
-    }
 }

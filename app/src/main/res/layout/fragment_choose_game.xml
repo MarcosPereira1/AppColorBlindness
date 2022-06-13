@@ -3,13 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-        <variable
-            name="data"
-            type="com.example.appcolorblindness.data.models.ColorBlindnessObservable" />
-
-        <import type="android.view.View"/>
-    </data>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -43,14 +36,12 @@
                 app:tint="@color/arrow_color_input_name" />
 
             <TextView
-                android:id="@+id/escolhaFaixaEtaria"
+                android:id="@+id/tvUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
                 android:fontFamily="@font/fredoka_one_regular"
                 android:gravity="center"
-                android:text="@={data.username}"
-                android:hint="Olá nome, escolha o jogo"
                 android:maxLines="2"
                 android:shadowColor="@color/shadow_text_welcome"
                 android:textColor="@color/arrow_back_age_group"
@@ -78,7 +69,7 @@
                 android:src="@drawable/ic_bnt_test_geometrics"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/escolhaFaixaEtaria"
+                app:layout_constraintTop_toBottomOf="@id/tvUsername"
                 tools:ignore="UnusedAttribute" />
 
             <ImageButton
@@ -100,7 +91,6 @@
                 android:layout_marginBottom="20dp"
                 android:backgroundTint="@android:color/transparent"
                 android:src="@drawable/ic_bnt_test_number"
-                android:visibility="@={data.has5years ? View.VISIBLE : View.GONE}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/ibBtnTestAnimals"
                 app:layout_constraintStart_toStartOf="@id/ibBtnTestAnimals"

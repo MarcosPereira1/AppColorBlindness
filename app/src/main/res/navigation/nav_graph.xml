@@ -89,6 +89,11 @@
         android:label="ChooseGameFragment"
         tools:layout="@layout/fragment_choose_game">
 
+        <action
+            android:id="@+id/action_fragChooseGame_to_fragAgeGroup"
+            app:destination="@id/fragAgeGroup"
+            app:popUpTo="@id/fragChooseGame"
+            app:popUpToInclusive="true"/>
     </fragment>
 
     <fragment
