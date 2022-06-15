@@ -22,6 +22,8 @@ class InputNameFragment : Fragment() {
         binding = FragmentInputNameBinding.inflate(inflater, container, false)
         navigateToAgeGroup()
 
+        binding.etUserName.setText(ColorBlindnessData.readUsername(requireContext()))
+
         return binding.root
     }
 

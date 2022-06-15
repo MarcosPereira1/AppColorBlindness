@@ -6,8 +6,8 @@ import com.example.appcolorblindness.BR
 
 class ColorBlindnessObservable : BaseObservable() {
 
-    @Bindable
-    var username: String = ""
+    @get: Bindable
+    var username: String? = ""
         set(value) {
             field = value
             notifyPropertyChanged(BR.username)

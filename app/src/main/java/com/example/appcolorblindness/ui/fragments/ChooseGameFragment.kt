@@ -4,13 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.appcolorblindness.R
 import com.example.appcolorblindness.data.ColorBlindnessData
-import com.example.appcolorblindness.data.constants.ColorBlindnessConstants
 import com.example.appcolorblindness.data.helpers.fromatters.ColorBlindnessFormatter
 import com.example.appcolorblindness.databinding.FragmentChooseGameBinding
 import com.example.appcolorblindness.ui.viewmodels.ColorBlindnessViewModel
@@ -23,12 +21,13 @@ class ChooseGameFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         binding = FragmentChooseGameBinding.inflate(inflater, container, false)
 
         navigationOfChooseGame()
         checkIfItIs5YearsOld()
         setUsername()
+
         return binding.root
     }
 
@@ -49,8 +48,6 @@ class ChooseGameFragment : Fragment() {
 
     private fun setUsername() {
         val name = ColorBlindnessData.readUsername(requireContext())
-        //binding.tvUsername?.text = name.toString()
-        Toast.makeText(requireContext(), name, Toast.LENGTH_SHORT).show()
+        binding.tvUsername.text = ColorBlindnessFormatter.formatUsername(name)
     }
-
 }

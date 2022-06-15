@@ -23,9 +23,9 @@ class AgeGroupFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentAgeGroupBinding.inflate(inflater, container, false)
-
         chooseAgeGroup()
         navigateToAgeGroup()
+
         return binding.root
     }
 
