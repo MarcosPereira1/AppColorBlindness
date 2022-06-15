@@ -94,6 +94,21 @@
             app:destination="@id/fragAgeGroup"
             app:popUpTo="@id/fragChooseGame"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_fragChooseGame_to_fragTestNumber"
+            app:destination="@id/fragTestNumber"
+            app:popUpTo="@id/fragChooseGame"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_fragChooseGame_to_fragTestAnimal"
+            app:destination="@id/fragTestAnimal"
+            app:popUpTo="@id/fragChooseGame"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_fragChooseGame_to_fragTestGeometricShapes"
+            app:destination="@id/fragTestGeometricShapes"
+            app:popUpTo="@id/fragChooseGame"
+            app:popUpToInclusive="true"/>
     </fragment>
 
     <fragment
