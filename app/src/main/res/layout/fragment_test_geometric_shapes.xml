@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/ibArrowBackTestNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="90dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/fredoka_one_regular"
+                android:gravity="center"
+                android:lines="2"
+                android:text="@string/teste_de_ishihara_com_formas_geom_tricas"
+                android:textColor="@color/arrow_color_input_name"
+                android:textSize="@dimen/body_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ibArrowBackTestNumber" />
+
+            <TextView
+                android:id="@+id/pergunta"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="50dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/fredoka_one_regular"
+                android:gravity="center"
+                android:lines="2"
+                android:text="@string/qual_forma_cont_m_na_imagem"
+                android:textColor="@color/black"
+                android:textSize="@dimen/body_4"
+                app:layout_constraintEnd_toEndOf="@+id/title"
+                app:layout_constraintStart_toStartOf="@+id/title"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <ImageView
+                android:id="@+id/ivImagemDoTeste"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginHorizontal="20dp"
+                android:src="@drawable/ic_number_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pergunta" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcAlternativa1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:elevation="10dp"
+                android:shadowColor="#C4C4C4"
+                android:shadowDx="2"
+                android:shadowRadius="1"
+                app:cardBackgroundColor="#2EC4C4C4"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/mcAlternativa2"
+                app:layout_constraintTop_toBottomOf="@+id/ivImagemDoTeste">
+
+                <TextView
+                    android:id="@+id/tvAlternativa1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/fredoka_one_regular"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/body_3" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcAlternativa2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:elevation="10dp"
+                android:shadowColor="#C4C4C4"
+                android:shadowDx="2"
+                android:shadowRadius="1"
+                app:cardBackgroundColor="#2EC4C4C4"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toStartOf="@id/mcAlternativa3"
+                app:layout_constraintStart_toEndOf="@id/mcAlternativa1"
+                app:layout_constraintTop_toTopOf="@id/mcAlternativa1">
+
+                <TextView
+                    android:id="@+id/tvAlternativa2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/fredoka_one_regular"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/body_3" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcAlternativa3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:elevation="10dp"
+                android:shadowColor="#C4C4C4"
+                android:shadowDx="2"
+                android:shadowRadius="1"
+                app:cardBackgroundColor="#2EC4C4C4"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mcAlternativa2"
+                app:layout_constraintTop_toTopOf="@+id/mcAlternativa2">
+
+                <TextView
+                    android:id="@+id/tvAlternativa3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/fredoka_one_regular"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/body_3" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcNenhumaAlternativa"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:elevation="10dp"
+                android:shadowColor="#C4C4C4"
+                android:shadowDx="2"
+                android:shadowRadius="1"
+                app:cardBackgroundColor="#2EC4C4C4"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/mcAlternativa3"
+                app:layout_constraintStart_toStartOf="@+id/mcAlternativa1"
+                app:layout_constraintTop_toBottomOf="@+id/mcAlternativa3">
+
+                <TextView
+                    android:id="@+id/tvNenhumaAlternativa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/fredoka_one_regular"
+                    android:gravity="center"
+                    android:text="@string/nenhuma_das_alternativas"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/body_5" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

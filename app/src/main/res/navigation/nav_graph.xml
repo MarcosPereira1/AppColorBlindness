@@ -115,7 +115,7 @@
         android:id="@+id/fragTestNumber"
         android:name="com.example.appcolorblindness.ui.fragments.TestNumberFragment"
         android:label="TestNumberFragment"
-        tools:layout="@layout/fragment_number_test">
+        tools:layout="@layout/fragment_test_number">
 
     </fragment>
 
@@ -123,7 +123,7 @@
         android:id="@+id/fragTestAnimal"
         android:name="com.example.appcolorblindness.ui.fragments.TestAnimalFragment"
         android:label="TestAnimalFragment"
-        tools:layout="@layout/fragment_animal_test">
+        tools:layout="@layout/fragment_test_animal">
 
     </fragment>
 
@@ -131,7 +131,7 @@
         android:id="@+id/fragTestGeometricShapes"
         android:name="com.example.appcolorblindness.ui.fragments.TestGeometricShapesFragment"
         android:label="TestGeometricShapesFragment"
-        tools:layout="@layout/fragment_geometric_shapes_test">
+        tools:layout="@layout/fragment_test_geometric_shapes">
 
     </fragment>
 

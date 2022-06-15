@@ -5,16 +5,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.appcolorblindness.databinding.FragmentNumberTestBinding
+import com.example.appcolorblindness.databinding.FragmentTestNumberBinding
 
 class TestNumberFragment : Fragment() {
-    private lateinit var binding: FragmentNumberTestBinding
+    private lateinit var binding: FragmentTestNumberBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentNumberTestBinding.inflate(inflater, container, false)
+        binding = FragmentTestNumberBinding.inflate(inflater, container, false)
 
         return binding.root
     }

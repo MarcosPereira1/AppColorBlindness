@@ -10,4 +10,9 @@
     <string name="ou">Ou</string>
     <string name="escolha_sua_faixa_etaria">Escolha sua faixa etária</string>
     <string name="_6_anos_ou_mais">6 anos ou mais</string>
+    <string name="nenhuma_das_alternativas">Nenhuma das alternativas</string>
+    <string name="teste_de_ishihara_com_animais">Teste de Ishihara com animais</string>
+    <string name="qual_animal_cont_m_na_imagem">Qual animal contém na imagem?</string>
+    <string name="teste_de_ishihara_com_formas_geom_tricas">Teste de Ishihara com formas geométricas</string>
+    <string name="qual_forma_cont_m_na_imagem">Qual forma contém na imagem?</string>
 </resources>

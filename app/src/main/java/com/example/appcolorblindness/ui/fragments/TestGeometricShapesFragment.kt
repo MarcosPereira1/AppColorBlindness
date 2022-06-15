@@ -5,16 +5,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.appcolorblindness.databinding.FragmentGeometricShapesTestBinding
+import com.example.appcolorblindness.databinding.FragmentTestGeometricShapesBinding
 
 class TestGeometricShapesFragment : Fragment() {
-    private lateinit var binding: FragmentGeometricShapesTestBinding
+    private lateinit var binding: FragmentTestGeometricShapesBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentGeometricShapesTestBinding.inflate(inflater, container, false)
+        binding = FragmentTestGeometricShapesBinding.inflate(inflater, container, false)
 
         return binding.root
     }

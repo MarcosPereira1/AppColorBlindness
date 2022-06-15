@@ -8,4 +8,5 @@
 
 
     <dimen name="margin_button_arrow">35dp</dimen>
+    <dimen name="body_5">20sp</dimen>
 </resources>
