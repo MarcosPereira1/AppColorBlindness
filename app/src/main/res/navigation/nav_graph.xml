@@ -117,6 +117,11 @@
         android:label="TestNumberFragment"
         tools:layout="@layout/fragment_test_number">
 
+        <action
+            android:id="@+id/action_fragTestNumber_to_fragChooseGame"
+            app:destination="@id/fragChooseGame"
+            app:popUpTo="@id/fragTestNumber"
+            app:popUpToInclusive="true"/>
     </fragment>
 
     <fragment
@@ -125,6 +130,11 @@
         android:label="TestAnimalFragment"
         tools:layout="@layout/fragment_test_animal">
 
+        <action
+            android:id="@+id/action_fragTestAnimal_to_fragChooseGame"
+            app:destination="@id/fragChooseGame"
+            app:popUpTo="@id/fragTestAnimal"
+            app:popUpToInclusive="true"/>
     </fragment>
 
     <fragment
@@ -133,6 +143,11 @@
         android:label="TestGeometricShapesFragment"
         tools:layout="@layout/fragment_test_geometric_shapes">
 
+        <action
+            android:id="@+id/action_fragTestGeometricShapes_to_fragChooseGame"
+            app:destination="@id/fragChooseGame"
+            app:popUpTo="@id/fragTestGeometricShapes"
+            app:popUpToInclusive="true"/>
     </fragment>
 
 </navigation>

@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.appcolorblindness.R
-import com.example.appcolorblindness.data.ColorBlindnessData
+import com.example.appcolorblindness.data.preferences.ColorBlindnessData
 import com.example.appcolorblindness.data.helpers.fromatters.ColorBlindnessFormatter
 import com.example.appcolorblindness.databinding.FragmentChooseGameBinding
 import com.example.appcolorblindness.ui.viewmodels.ColorBlindnessViewModel
@@ -34,6 +34,18 @@ class ChooseGameFragment : Fragment() {
     private fun navigationOfChooseGame() {
         binding.ibArrowBackChooseGame.setOnClickListener {
             findNavController().navigate(R.id.action_fragChooseGame_to_fragAgeGroup)
+        }
+
+        binding.ibBtnTestNumbers.setOnClickListener {
+            findNavController().navigate(R.id.action_fragChooseGame_to_fragTestNumber)
+        }
+
+        binding.ibBtnTestAnimals.setOnClickListener {
+            findNavController().navigate(R.id.action_fragChooseGame_to_fragTestAnimal)
+        }
+
+        binding.ibBtnTestGeometrics.setOnClickListener {
+            findNavController().navigate(R.id.action_fragChooseGame_to_fragTestGeometricShapes)
         }
     }
 

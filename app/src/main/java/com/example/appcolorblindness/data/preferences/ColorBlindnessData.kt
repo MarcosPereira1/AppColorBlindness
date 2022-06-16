@@ -1,4 +1,4 @@
-package com.example.appcolorblindness.data
+package com.example.appcolorblindness.data.preferences
 
 import android.content.Context
 
