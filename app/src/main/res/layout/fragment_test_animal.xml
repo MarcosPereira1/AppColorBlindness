@@ -60,7 +60,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:layout_marginHorizontal="20dp"
-                android:src="@drawable/ic_number_10"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_animal_1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pergunta" />
@@ -69,25 +70,23 @@
                 android:id="@+id/mcAlternativa1"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:elevation="10dp"
-                android:shadowColor="#C4C4C4"
-                android:shadowDx="2"
-                android:shadowRadius="1"
-                app:cardBackgroundColor="#2EC4C4C4"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="10dp"
+                android:shadowDx="10"
+                android:shadowRadius="15"
                 app:cardCornerRadius="15dp"
+                app:strokeWidth="1dp"
+                android:clickable="true"
                 android:layout_marginTop="20dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/mcAlternativa2"
                 app:layout_constraintTop_toBottomOf="@+id/ivImagemDoTeste">
 
-                <TextView
-                    android:id="@+id/tvAlternativa1"
+                <ImageView
+                    android:id="@+id/ivAlternative1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/fredoka_one_regular"
-                    android:gravity="center"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/body_3" />
+                    />
 
             </com.google.android.material.card.MaterialCardView>
 
@@ -95,24 +94,22 @@
                 android:id="@+id/mcAlternativa2"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:elevation="10dp"
-                android:shadowColor="#C4C4C4"
-                android:shadowDx="2"
-                android:shadowRadius="1"
-                app:cardBackgroundColor="#2EC4C4C4"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="10dp"
+                android:shadowDx="10"
+                android:shadowRadius="15"
                 app:cardCornerRadius="15dp"
+                app:strokeWidth="1dp"
+                android:clickable="true"
                 app:layout_constraintEnd_toStartOf="@id/mcAlternativa3"
                 app:layout_constraintStart_toEndOf="@id/mcAlternativa1"
                 app:layout_constraintTop_toTopOf="@id/mcAlternativa1">
 
-                <TextView
-                    android:id="@+id/tvAlternativa2"
+                <ImageView
+                    android:id="@+id/ivAlternative2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/fredoka_one_regular"
-                    android:gravity="center"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/body_3" />
+                    />
 
             </com.google.android.material.card.MaterialCardView>
 
@@ -120,24 +117,22 @@
                 android:id="@+id/mcAlternativa3"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:elevation="10dp"
-                android:shadowColor="#C4C4C4"
-                android:shadowDx="2"
-                android:shadowRadius="1"
-                app:cardBackgroundColor="#2EC4C4C4"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="10dp"
+                android:shadowDx="10"
+                android:shadowRadius="15"
                 app:cardCornerRadius="15dp"
+                app:strokeWidth="1dp"
+                android:clickable="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/mcAlternativa2"
                 app:layout_constraintTop_toTopOf="@+id/mcAlternativa2">
 
-                <TextView
-                    android:id="@+id/tvAlternativa3"
+                <ImageView
+                    android:id="@+id/ivAlternative3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/fredoka_one_regular"
-                    android:gravity="center"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/body_3" />
+                    />
 
             </com.google.android.material.card.MaterialCardView>
 
@@ -145,14 +140,16 @@
                 android:id="@+id/mcNenhumaAlternativa"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginHorizontal="20dp"
-                android:elevation="10dp"
-                android:shadowColor="#C4C4C4"
-                android:shadowDx="2"
-                android:shadowRadius="1"
-                app:cardBackgroundColor="#2EC4C4C4"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:shadowDx="10"
+                android:shadowRadius="15"
+                app:cardBackgroundColor="#ECECEC"
                 app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/mcAlternativa3"
                 app:layout_constraintStart_toStartOf="@+id/mcAlternativa1"
                 app:layout_constraintTop_toBottomOf="@+id/mcAlternativa3">
