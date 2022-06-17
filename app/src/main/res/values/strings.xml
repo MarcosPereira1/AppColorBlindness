@@ -15,4 +15,7 @@
     <string name="qual_animal_cont_m_na_imagem">Qual animal contém na imagem?</string>
     <string name="teste_de_ishihara_com_formas_geom_tricas">Teste de Ishihara com formas geométricas</string>
     <string name="qual_forma_cont_m_na_imagem">Qual forma contém na imagem?</string>
+    <string name="compartilhar">Compartilhar</string>
+    <string name="text_feedaback">Você tem visão de cores normal, o que significa que pode ver até um milhão de tons distintos de cor!</string>
+    <string name="feedbackNegativo">Você não acertou a maioria das respostas, e tem uma grande probabilidade de ser daltônico. Sugerimos a procura de um oftalmologista!</string>
 </resources>

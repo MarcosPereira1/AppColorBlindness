@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#C2FFAEAE">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/confetes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:elevation="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_confetes_3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageButton
+                android:id="@+id/ibArrowBackChooseGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/arrow_color_input_name" />
+
+            <ImageView
+                android:id="@+id/shapeSharedFeedback"
+                android:layout_width="154dp"
+                android:layout_height="101dp"
+                android:src="@drawable/ic_background_shared"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnShareFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_share"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/compartilhar"
+                android:textColor="#51196B"
+                android:textSize="12sp"
+                android:fontFamily="@font/fredoka_one_regular"
+                app:layout_constraintEnd_toEndOf="@id/btnShareFeedback"
+                app:layout_constraintStart_toStartOf="@id/btnShareFeedback"
+                app:layout_constraintTop_toBottomOf="@id/btnShareFeedback" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                android:fontFamily="@font/fredoka_one_regular"
+                android:gravity="center"
+                android:shadowColor="#40000000"
+                android:shadowDx="1"
+                android:shadowDy="12"
+                android:shadowRadius="10"
+                android:text="Visão de cor anormal"
+                android:textColor="#BA012D"
+                android:textSize="@dimen/body_3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibArrowBackChooseGame" />
+
+            <ImageView
+                android:id="@+id/ivFail"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ic_fail"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <ImageView
+                android:id="@+id/shapeShareFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_shape_feedback"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/ivFail"
+                app:layout_constraintStart_toStartOf="@+id/ivFail"
+                app:layout_constraintTop_toBottomOf="@+id/ivFail" />
+
+            <TextView
+                android:id="@+id/tvFeedback"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                android:fontFamily="@font/fredoka_one_regular"
+                android:gravity="center"
+                android:hint="Você acertou x testes de x testes."
+                android:textColor="#1C6628"
+                android:textSize="28sp"
+                android:layout_marginTop="60dp"
+                app:layout_constraintEnd_toEndOf="@+id/shapeShareFeedback"
+                app:layout_constraintStart_toStartOf="@+id/shapeShareFeedback"
+                app:layout_constraintTop_toBottomOf="@+id/ivFail" />
+
+            <TextView
+                android:id="@+id/tvTextfeedbackFail"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                android:fontFamily="@font/fredoka_one_regular"
+                android:gravity="center"
+                android:text="@string/feedbackNegativo"
+                android:textColor="#775CA6"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvFeedback"
+                app:layout_constraintStart_toStartOf="@+id/tvFeedback"
+                app:layout_constraintTop_toBottomOf="@+id/tvFeedback" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

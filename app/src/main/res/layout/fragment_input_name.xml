@@ -7,135 +7,135 @@
         android:layout_height="match_parent"
         android:background="#FFEBF9">
 
-        <ImageButton
-            android:id="@+id/ibArrowBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:backgroundTint="@android:color/transparent"
-            android:src="@drawable/ic_arrow_back"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/arrow_color_input_name" />
+            <ImageButton
+                android:id="@+id/ibArrowBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/arrow_color_input_name" />
 
-        <ImageView
-            android:id="@+id/shapeInputNameText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="50dp"
-            android:layout_marginTop="10dp"
-            android:adjustViewBounds="true"
-            android:elevation="2dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_shape_text_input_name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ibArrowBack" />
-
-        <TextView
-            android:id="@+id/QualONome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="3dp"
-            android:fontFamily="@font/fredoka_one_regular"
-            android:gravity="center"
-            android:shadowColor="@color/shadow_text_welcome"
-            android:text="Qual é o seu nome?"
-            android:textColor="@color/text_question_input_name"
-            android:textSize="@dimen/body_4"
-            app:layout_constraintBottom_toBottomOf="@+id/shapeInputNameText"
-            app:layout_constraintEnd_toEndOf="@+id/shapeInputNameText"
-            app:layout_constraintStart_toStartOf="@+id/shapeInputNameText"
-            app:layout_constraintTop_toTopOf="@+id/shapeInputNameText" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="40dp"
-            android:layout_marginTop="15dp"
-            android:elevation="2dp"
-            android:fontFamily="@font/fredoka_one_regular"
-            android:textColor="@color/white"
-            android:textSize="@dimen/body_4"
-            app:boxBackgroundColor="#775CA6"
-            app:boxCornerRadiusBottomEnd="30dp"
-            app:boxCornerRadiusBottomStart="30dp"
-            app:boxCornerRadiusTopEnd="30dp"
-            app:boxCornerRadiusTopStart="30dp"
-            app:boxStrokeColor="#775CA6"
-            app:hintTextColor="@color/white"
-            app:layout_constraintEnd_toEndOf="@+id/shapeInputNameText"
-            app:layout_constraintStart_toStartOf="@+id/shapeInputNameText"
-            app:layout_constraintTop_toBottomOf="@+id/shapeInputNameText"
-            app:startIconDrawable="@drawable/ic_edit_input_name"
-            app:startIconTint="@color/white">
-
-            <EditText
-                android:id="@+id/etUserName"
+            <ImageView
+                android:id="@+id/shapeInputNameText"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:elevation="2dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_shape_text_input_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibArrowBack" />
+
+            <TextView
+                android:id="@+id/QualONome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
                 android:fontFamily="@font/fredoka_one_regular"
-                android:inputType="textAutoComplete"
+                android:gravity="center"
+                android:shadowColor="@color/shadow_text_welcome"
+                android:text="Qual é o seu nome?"
+                android:textColor="@color/text_question_input_name"
+                android:textSize="@dimen/body_4"
+                app:layout_constraintBottom_toBottomOf="@+id/shapeInputNameText"
+                app:layout_constraintEnd_toEndOf="@+id/shapeInputNameText"
+                app:layout_constraintStart_toStartOf="@+id/shapeInputNameText"
+                app:layout_constraintTop_toTopOf="@+id/shapeInputNameText" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="15dp"
+                android:elevation="2dp"
+                android:fontFamily="@font/fredoka_one_regular"
                 android:textColor="@color/white"
                 android:textSize="@dimen/body_4"
-                android:gravity="center"
-                app:hintTextColor="@color/white" />
+                app:boxBackgroundColor="#775CA6"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxStrokeColor="#775CA6"
+                app:hintTextColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/shapeInputNameText"
+                app:layout_constraintStart_toStartOf="@+id/shapeInputNameText"
+                app:layout_constraintTop_toBottomOf="@+id/shapeInputNameText"
+                app:startIconDrawable="@drawable/ic_edit_input_name"
+                app:startIconTint="@color/white">
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <EditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/fredoka_one_regular"
+                    android:inputType="textAutoComplete"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/body_4"
+                    android:gravity="center"
+                    app:hintTextColor="@color/white" />
 
-        <ImageView
-            android:id="@+id/confetesInputName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:elevation="0dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_confetes_input_name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-        <ImageView
-            android:id="@+id/shapeInputName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:elevation="0dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_shape_input_name"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            <ImageView
+                android:id="@+id/confetesInputName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:elevation="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_confetes_input_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/criancasInputName"
-            android:layout_width="273dp"
-            android:layout_height="314dp"
-            android:adjustViewBounds="true"
-            android:elevation="0dp"
-            android:scaleType="fitCenter"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/ic_criancas_input_name"
-            app:layout_constraintBottom_toBottomOf="@id/ibNext"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textInputLayout" />
+            <ImageView
+                android:id="@+id/shapeInputName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:elevation="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_shape_input_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
 
-        <ImageButton
-            android:id="@+id/ibNext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/margin_button_arrow"
-            android:layout_marginBottom="30dp"
-            android:background="@android:color/transparent"
-            android:elevation="4dp"
-            android:src="@drawable/ic_arrow_input_name"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/criancasInputName" />
+            <ImageView
+                android:id="@+id/criancasInputName"
+                android:layout_width="273dp"
+                android:layout_height="314dp"
+                android:adjustViewBounds="true"
+                android:elevation="0dp"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_criancas_input_name"
+                app:layout_constraintBottom_toBottomOf="@id/ibNext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textInputLayout" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageButton
+                android:id="@+id/ibNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_button_arrow"
+                android:layout_marginBottom="30dp"
+                android:background="@android:color/transparent"
+                android:elevation="4dp"
+                android:src="@drawable/ic_arrow_input_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/criancasInputName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

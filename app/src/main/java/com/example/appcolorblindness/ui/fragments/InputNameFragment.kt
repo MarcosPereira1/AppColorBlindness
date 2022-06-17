@@ -28,7 +28,7 @@ class InputNameFragment : Fragment() {
     private fun navigateToAgeGroup() {
         binding.ibNext.setOnClickListener {
             findNavController().navigate(R.id.action_fragInputName_to_fragAgeGroup)
-            ColorBlindnessData.updateUsername(requireContext(), binding.etUserName.text.toString())
+            ColorBlindnessData.writeUsername(requireContext(), binding.etUserName.text.toString())
         }
 
         binding.ibArrowBack.setOnClickListener {

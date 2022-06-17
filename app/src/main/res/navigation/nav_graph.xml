@@ -80,7 +80,9 @@
             app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_fragAgeGroup_to_fragInputName"
-            app:destination="@id/fragInputName" />
+            app:destination="@id/fragInputName"
+            app:popUpTo="@id/fragAgeGroup"
+            app:popUpToInclusive="true"/>
     </fragment>
 
     <fragment
@@ -122,6 +124,16 @@
             app:destination="@id/fragChooseGame"
             app:popUpTo="@id/fragTestNumber"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_fragTestNumber_to_fragFeedbackOk"
+            app:destination="@id/fragFeedbackOk"
+            app:popUpTo="@id/fragTestNumber"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_fragTestNumber_to_fragFeedbackFail"
+            app:destination="@id/fragFeedbackFail"
+            app:popUpTo="@id/fragTestNumber"
+            app:popUpToInclusive="true"/>
     </fragment>
 
     <fragment
@@ -133,6 +145,16 @@
         <action
             android:id="@+id/action_fragTestAnimal_to_fragChooseGame"
             app:destination="@id/fragChooseGame"
+            app:popUpTo="@id/fragTestAnimal"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_fragTestAnimal_to_fragFeedbackOk"
+            app:destination="@id/fragFeedbackOk"
+            app:popUpTo="@id/fragTestAnimal"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_fragTestAnimal_to_fragFeedbackFail"
+            app:destination="@id/fragFeedbackFail"
             app:popUpTo="@id/fragTestAnimal"
             app:popUpToInclusive="true"/>
     </fragment>
@@ -147,6 +169,52 @@
             android:id="@+id/action_fragTestGeometricShapes_to_fragChooseGame"
             app:destination="@id/fragChooseGame"
             app:popUpTo="@id/fragTestGeometricShapes"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_fragTestGeometricShapes_to_fragFeedbackOk"
+            app:destination="@id/fragFeedbackOk"
+            app:popUpTo="@id/fragTestGeometricShapes"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_fragTestGeometricShapes_to_fragFeedbackFail"
+            app:destination="@id/fragFeedbackFail"
+            app:popUpTo="@id/fragTestGeometricShapes"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragFeedbackOk"
+        android:name="com.example.appcolorblindness.ui.fragments.FeedbackSuccessFragment"
+        android:label="FeedbackSuccessFragment"
+        tools:layout="@layout/fragment_feedback_ok">
+
+        <argument
+            android:name="response"
+            app:argType="string"
+            android:defaultValue="0" />
+
+        <action
+            android:id="@+id/action_fragFeedbackOk_to_fragChooseGame"
+            app:destination="@id/fragChooseGame"
+            app:popUpTo="@id/fragFeedbackOk"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragFeedbackFail"
+        android:name="com.example.appcolorblindness.ui.fragments.FeedbackFailFragment"
+        android:label="FeedbackFailFragment"
+        tools:layout="@layout/fragment_feedback_fail">
+
+        <argument
+            android:name="response"
+            app:argType="string"
+            android:defaultValue="0" />
+
+        <action
+            android:id="@+id/action_fragFeedbackFail_to_fragChooseGame"
+            app:destination="@id/fragChooseGame"
+            app:popUpTo="@id/fragFeedbackFail"
             app:popUpToInclusive="true"/>
     </fragment>
 

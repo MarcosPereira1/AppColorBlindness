@@ -2,155 +2,159 @@
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#C7FFF2BC">
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="#C7FFF2BC">
 
-        <ImageView
-            android:id="@+id/planeta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:rotation="-10"
-            android:layout_margin="20dp"
-            android:src="@drawable/ic_planeta"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+           <ImageView
+               android:id="@+id/planeta"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:rotation="-10"
+               android:layout_margin="20dp"
+               android:src="@drawable/ic_planeta"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/aviao"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:rotation="-6"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/ic_aviao"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/planeta" />
+           <ImageView
+               android:id="@+id/aviao"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:rotation="-6"
+               android:layout_marginEnd="20dp"
+               android:src="@drawable/ic_aviao"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="@+id/planeta" />
 
-        <ImageView
-            android:id="@+id/estrelas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_estrelas"
-            android:layout_marginTop="60dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+           <ImageView
+               android:id="@+id/estrelas"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_estrelas"
+               android:layout_marginTop="60dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/criancas_about"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginBottom="20dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_criancas_about"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/estrelas" />
+           <ImageView
+               android:id="@+id/criancas_about"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="10dp"
+               android:layout_marginBottom="20dp"
+               android:adjustViewBounds="true"
+               android:scaleType="fitCenter"
+               android:src="@drawable/ic_criancas_about"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/estrelas" />
 
-        <TextView
-            android:id="@+id/Text1"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:elevation="3dp"
-            android:fontFamily="@font/fredoka_one_regular"
-            android:gravity="center"
-            android:shadowColor="@color/shadow_text_welcome"
-            android:text="@string/text1_about"
-            android:textColor="@color/text_1_about"
-            android:textSize="@dimen/body_3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/planeta" />
+           <TextView
+               android:id="@+id/Text1"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:elevation="3dp"
+               android:fontFamily="@font/fredoka_one_regular"
+               android:gravity="center"
+               android:shadowColor="@color/shadow_text_welcome"
+               android:text="@string/text1_about"
+               android:textColor="@color/text_1_about"
+               android:textSize="@dimen/body_3"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/planeta" />
 
-        <TextView
-            android:id="@+id/Text2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="3dp"
-            android:fontFamily="@font/fredoka_one_regular"
-            android:gravity="center"
-            android:shadowColor="@color/shadow_text_welcome"
-            android:shadowDx="1"
-            android:shadowDy="12"
-            android:shadowRadius="10"
-            android:text="@string/daltonismo"
-            android:textColor="@color/text_2_about"
-            android:textSize="@dimen/body_3"
-            app:layout_constraintEnd_toEndOf="@+id/Text1"
-            app:layout_constraintStart_toStartOf="@+id/Text1"
-            app:layout_constraintTop_toBottomOf="@+id/Text1" />
+           <TextView
+               android:id="@+id/Text2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:elevation="3dp"
+               android:fontFamily="@font/fredoka_one_regular"
+               android:gravity="center"
+               android:shadowColor="@color/shadow_text_welcome"
+               android:shadowDx="1"
+               android:shadowDy="12"
+               android:shadowRadius="10"
+               android:text="@string/daltonismo"
+               android:textColor="@color/text_2_about"
+               android:textSize="@dimen/body_3"
+               app:layout_constraintEnd_toEndOf="@+id/Text1"
+               app:layout_constraintStart_toStartOf="@+id/Text1"
+               app:layout_constraintTop_toBottomOf="@+id/Text1" />
 
-        <TextView
-            android:id="@+id/Text3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="3dp"
-            android:fontFamily="@font/fredoka_one_regular"
-            android:gravity="center"
-            android:text="@string/de_forma"
-            android:textColor="@color/text_1_about"
-            android:textSize="@dimen/body_3"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="40dp"
-            app:layout_constraintStart_toStartOf="@+id/Text1"
-            app:layout_constraintTop_toBottomOf="@+id/Text2" />
+           <TextView
+               android:id="@+id/Text3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:elevation="3dp"
+               android:fontFamily="@font/fredoka_one_regular"
+               android:gravity="center"
+               android:text="@string/de_forma"
+               android:textColor="@color/text_1_about"
+               android:textSize="@dimen/body_3"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="40dp"
+               app:layout_constraintStart_toStartOf="@+id/Text1"
+               app:layout_constraintTop_toBottomOf="@+id/Text2" />
 
-        <TextView
-            android:id="@+id/Text4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="65dp"
-            android:elevation="3dp"
-            android:fontFamily="@font/fredoka_one_regular"
-            android:gravity="center"
-            android:text="@string/interativa"
-            android:textColor="@color/text_4_about"
-            android:textSize="@dimen/body_3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/Text3" />
+           <TextView
+               android:id="@+id/Text4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="65dp"
+               android:elevation="3dp"
+               android:fontFamily="@font/fredoka_one_regular"
+               android:gravity="center"
+               android:text="@string/interativa"
+               android:textColor="@color/text_4_about"
+               android:textSize="@dimen/body_3"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/Text3" />
 
-        <TextView
-            android:id="@+id/Text5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="3dp"
-            android:fontFamily="@font/fredoka_one_regular"
-            android:gravity="center"
-            android:text="@string/e"
-            android:textColor="@color/text_1_about"
-            android:textSize="@dimen/body_3"
-            android:layout_marginStart="8dp"
-            app:layout_constraintStart_toEndOf="@+id/Text4"
-            app:layout_constraintTop_toTopOf="@+id/Text4" />
+           <TextView
+               android:id="@+id/Text5"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:elevation="3dp"
+               android:fontFamily="@font/fredoka_one_regular"
+               android:gravity="center"
+               android:text="@string/e"
+               android:textColor="@color/text_1_about"
+               android:textSize="@dimen/body_3"
+               android:layout_marginStart="8dp"
+               app:layout_constraintStart_toEndOf="@+id/Text4"
+               app:layout_constraintTop_toTopOf="@+id/Text4" />
 
-        <TextView
-            android:id="@+id/Text6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="3dp"
-            android:fontFamily="@font/fredoka_one_regular"
-            android:gravity="center"
-            android:text="divertida!"
-            android:textColor="@color/text_5_about"
-            android:textSize="@dimen/body_3"
-            app:layout_constraintEnd_toEndOf="@+id/Text5"
-            app:layout_constraintStart_toEndOf="@+id/Text4"
-            app:layout_constraintTop_toBottomOf="@+id/Text5" />
+           <TextView
+               android:id="@+id/Text6"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:elevation="3dp"
+               android:fontFamily="@font/fredoka_one_regular"
+               android:gravity="center"
+               android:text="divertida!"
+               android:textColor="@color/text_5_about"
+               android:textSize="@dimen/body_3"
+               app:layout_constraintEnd_toEndOf="@+id/Text5"
+               app:layout_constraintStart_toEndOf="@+id/Text4"
+               app:layout_constraintTop_toBottomOf="@+id/Text5" />
 
-        <ImageButton
-            android:id="@+id/ibArrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_arrow_about"
-            android:background="@android:color/transparent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginBottom="12dp"
-            android:layout_marginEnd="@dimen/margin_button_arrow"/>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+           <ImageButton
+               android:id="@+id/ibArrow"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_arrow_about"
+               android:background="@android:color/transparent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               android:layout_marginBottom="12dp"
+               android:layout_marginEnd="@dimen/margin_button_arrow"/>
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </androidx.core.widget.NestedScrollView>
 </layout>
