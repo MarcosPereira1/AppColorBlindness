@@ -106,7 +106,7 @@
 
             <TextView
                 android:id="@+id/tvFeedback"
-                android:layout_width="250dp"
+                android:layout_width="230dp"
                 android:layout_height="wrap_content"
                 android:elevation="3dp"
                 android:fontFamily="@font/fredoka_one_regular"
@@ -114,7 +114,7 @@
                 android:hint="Você acertou x testes de x testes."
                 android:textColor="#1C6628"
                 android:textSize="28sp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="80dp"
                 app:layout_constraintEnd_toEndOf="@+id/shapeShareFeedback"
                 app:layout_constraintStart_toStartOf="@+id/shapeShareFeedback"
                 app:layout_constraintTop_toBottomOf="@+id/ivFail" />

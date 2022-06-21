@@ -169,8 +169,8 @@
             android:defaultValue="0" />
 
         <action
-            android:id="@+id/action_fragFeedbackOk_to_fragChooseGame"
-            app:destination="@id/fragChooseGame"
+            android:id="@+id/action_fragFeedbackOk_to_fragAgeGroup"
+            app:destination="@id/fragAgeGroup"
             app:popUpTo="@id/fragFeedbackOk"
             app:popUpToInclusive="true"/>
     </fragment>
@@ -187,8 +187,8 @@
             android:defaultValue="0" />
 
         <action
-            android:id="@+id/action_fragFeedbackFail_to_fragChooseGame"
-            app:destination="@id/fragChooseGame"
+            android:id="@+id/action_fragFeedbackFail_to_fragAgeGroup"
+            app:destination="@id/fragAgeGroup"
             app:popUpTo="@id/fragFeedbackFail"
             app:popUpToInclusive="true"/>
     </fragment>

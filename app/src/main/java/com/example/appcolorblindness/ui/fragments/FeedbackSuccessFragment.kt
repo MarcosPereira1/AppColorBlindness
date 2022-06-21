@@ -1,11 +1,8 @@
 package com.example.appcolorblindness.ui.fragments
 
-import android.Manifest
-import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.ContentValues
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Build
@@ -17,14 +14,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.app.ActivityCompat
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.appcolorblindness.BuildConfig
 import com.example.appcolorblindness.R
 import com.example.appcolorblindness.data.constants.ColorBlindnessConstants
-import com.example.appcolorblindness.data.constants.ColorBlindnessConstants.REQUEST_EXTERNAL_STORAGE
 import com.example.appcolorblindness.data.preferences.ColorBlindnessData
 import com.example.appcolorblindness.databinding.FragmentFeedbackOkBinding
 import java.io.File
@@ -52,7 +47,7 @@ class FeedbackSuccessFragment : Fragment() {
 
     private fun navigationToChooseGame() {
         binding.ibArrowBackChooseGame.setOnClickListener {
-            findNavController().navigate(R.id.action_fragFeedbackOk_to_fragChooseGame)
+            findNavController().navigate(R.id.action_fragFeedbackOk_to_fragAgeGroup)
         }
     }
 
@@ -100,7 +95,7 @@ class FeedbackSuccessFragment : Fragment() {
             fileOutputStream.close()
 
             // Criar um novo método para tirar ScreenShot com o imageFile.
-           // shareScreenShot(imageFile)
+            shareScreenShot(imageFile)
         } catch (e: IOException) {
             e.printStackTrace()
         }
