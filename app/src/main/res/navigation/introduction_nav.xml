@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/introduction_nav"
+    app:startDestination="@id/fragWelcome">
+
+    <fragment
+        android:id="@+id/fragWelcome"
+        android:name="com.example.appcolorblindness.ui.fragments.WelcomeFragment"
+        android:label="WelcomeFragment"
+        tools:layout="@layout/fragment_welcome">
+
+        <action
+            android:id="@+id/action_fragWelcome_to_fragAboutGame"
+            app:destination="@id/fragAboutGame"
+            app:popUpTo="@id/fragWelcome"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragAboutGame"
+        android:name="com.example.appcolorblindness.ui.fragments.AboutGameFragment"
+        android:label="AboutGameFragment"
+        tools:layout="@layout/fragment_about_game">
+
+        <action
+            android:id="@+id/action_fragment_to_nav_graph"
+            app:destination="@id/nav_graph" />
+    </fragment>
+
+    <include app:graph="@navigation/nav_graph" />
+
+</navigation>

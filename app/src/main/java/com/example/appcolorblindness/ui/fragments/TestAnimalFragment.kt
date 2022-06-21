@@ -1,10 +1,10 @@
 package com.example.appcolorblindness.ui.fragments
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -99,7 +99,22 @@ class TestAnimalFragment : Fragment() {
 
     private fun navigationOfTestAnimal() {
         binding.ibArrowBackTestNumber.setOnClickListener {
-            findNavController().navigate(R.id.action_fragTestAnimal_to_fragChooseGame)
+            confirmExitTest()
         }
+    }
+
+    private fun confirmExitTest() {
+        val builder = AlertDialog.Builder(context)
+        builder.setMessage("Tem certeza que desistir do teste?")
+            .setCancelable(false)
+            .setPositiveButton(
+                "Sim"
+            ) { _, _ ->
+                findNavController().navigate(R.id.action_fragTestAnimal_to_fragAgeGroup) }
+            .setNegativeButton(
+                "Não"
+            ) { dialog, _ -> dialog.cancel() }
+        val alert = builder.create()
+        alert.show()
     }
 }

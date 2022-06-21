@@ -80,6 +80,7 @@
                     android:inputType="textAutoComplete"
                     android:textColor="@color/white"
                     android:textSize="@dimen/body_4"
+                    android:imeOptions="actionDone"
                     android:gravity="center"
                     app:hintTextColor="@color/white" />
 

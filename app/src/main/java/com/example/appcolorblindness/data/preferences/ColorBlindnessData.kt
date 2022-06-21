@@ -7,7 +7,19 @@ object ColorBlindnessData {
     private const val USERNAME_KEY = "username"
     private const val RESPONSE_KEY = "response"
     private const val QUESTION_KEY = "response"
-    const val APP_INTRODUCTION_KEY = "app-intro"
+    private const val APP_INTRODUCTION_KEY = "app-intro"
+
+    fun updateIntroStatus(context: Context, status: Boolean) {
+        context.getSharedPreferences(COLOR_BLINDNESS_PREFERENCES, Context.MODE_PRIVATE).edit()
+            .putBoolean(
+                APP_INTRODUCTION_KEY, status
+            ).apply()
+    }
+
+    fun introShow(context: Context) =
+        context.getSharedPreferences(COLOR_BLINDNESS_PREFERENCES, Context.MODE_PRIVATE).getBoolean(
+            APP_INTRODUCTION_KEY, false
+        )
 
     fun writeUsername(context: Context, username: String) {
         writeStringPreferences(context, USERNAME_KEY, username)

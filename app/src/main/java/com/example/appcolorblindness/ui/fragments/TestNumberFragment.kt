@@ -1,15 +1,18 @@
 package com.example.appcolorblindness.ui.fragments
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.appcolorblindness.R
+import com.example.appcolorblindness.data.constants.ColorBlindnessConstants
 import com.example.appcolorblindness.data.local.TestNumeric
 import com.example.appcolorblindness.data.models.QuestionResponse
+import com.example.appcolorblindness.data.preferences.ColorBlindnessData
 import com.example.appcolorblindness.databinding.FragmentTestNumberBinding
 
 class TestNumberFragment : Fragment() {
@@ -79,12 +82,38 @@ class TestNumberFragment : Fragment() {
             val question = questions[it.questionId - 1]
             if(question.correctAlternative == it.selectedAlternative) correctResponse++
         }
-        Toast.makeText(requireContext(), "Você acertou $correctResponse de ${questions.size} testes", Toast.LENGTH_SHORT).show()
+
+        if (correctResponse >= 4) {
+            val data = bundleOf(ColorBlindnessConstants.RESPONSE_USER to "$correctResponse")
+            ColorBlindnessData.writeCorrectResponse(requireContext(), correctResponse)
+            findNavController().navigate(R.id.action_fragTestNumber_to_fragFeedbackOk, data)
+
+        } else {
+            val data = bundleOf(ColorBlindnessConstants.RESPONSE_USER to "$correctResponse")
+            findNavController().navigate(R.id.action_fragTestNumber_to_fragFeedbackFail, data)
+        }
+
+        ColorBlindnessData.writeQuestions(requireContext(), questions.size)
     }
 
     private fun navigationOfTestNumber() {
         binding.ibArrowBackTestNumber.setOnClickListener {
-            findNavController().navigate(R.id.action_fragTestNumber_to_fragChooseGame)
+            confirmExitTest()
         }
+    }
+
+    private fun confirmExitTest() {
+        val builder = AlertDialog.Builder(context)
+        builder.setMessage("Tem certeza que desistir do teste?")
+            .setCancelable(false)
+            .setPositiveButton(
+                "Sim"
+            ) { _, _ ->
+                findNavController().navigate(R.id.action_fragTestNumber_to_fragAgeGroup) }
+            .setNegativeButton(
+                "Não"
+            ) { dialog, _ -> dialog.cancel() }
+        val alert = builder.create()
+        alert.show()
     }
 }

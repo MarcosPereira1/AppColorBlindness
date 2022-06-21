@@ -3,33 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/fragWelcome">
-
-    <fragment
-        android:id="@+id/fragWelcome"
-        android:name="com.example.appcolorblindness.ui.fragments.WelcomeFragment"
-        android:label="WelcomeFragment"
-        tools:layout="@layout/fragment_welcome">
-
-        <action
-            android:id="@+id/action_fragWelcome_to_fragAboutGame"
-            app:destination="@id/fragAboutGame"
-            app:popUpTo="@id/fragWelcome"
-            app:popUpToInclusive="true"/>
-    </fragment>
-
-    <fragment
-        android:id="@+id/fragAboutGame"
-        android:name="com.example.appcolorblindness.ui.fragments.AboutGameFragment"
-        android:label="AboutGameFragment"
-        tools:layout="@layout/fragment_about_game">
-
-        <action
-            android:id="@+id/action_fragAboutGame_to_fragStartGame"
-            app:destination="@id/fragStartGame"
-            app:popUpTo="@id/fragAboutGame"
-            app:popUpToInclusive="true"/>
-    </fragment>
+    app:startDestination="@id/fragStartGame">
 
     <fragment
         android:id="@+id/fragStartGame"
@@ -120,8 +94,8 @@
         tools:layout="@layout/fragment_test_number">
 
         <action
-            android:id="@+id/action_fragTestNumber_to_fragChooseGame"
-            app:destination="@id/fragChooseGame"
+            android:id="@+id/action_fragTestNumber_to_fragAgeGroup"
+            app:destination="@id/fragAgeGroup"
             app:popUpTo="@id/fragTestNumber"
             app:popUpToInclusive="true"/>
         <action
@@ -143,8 +117,8 @@
         tools:layout="@layout/fragment_test_animal">
 
         <action
-            android:id="@+id/action_fragTestAnimal_to_fragChooseGame"
-            app:destination="@id/fragChooseGame"
+            android:id="@+id/action_fragTestAnimal_to_fragAgeGroup"
+            app:destination="@id/fragAgeGroup"
             app:popUpTo="@id/fragTestAnimal"
             app:popUpToInclusive="true"/>
         <action
@@ -166,8 +140,8 @@
         tools:layout="@layout/fragment_test_geometric_shapes">
 
         <action
-            android:id="@+id/action_fragTestGeometricShapes_to_fragChooseGame"
-            app:destination="@id/fragChooseGame"
+            android:id="@+id/action_fragTestGeometricShapes_to_fragAgeGroup"
+            app:destination="@id/fragAgeGroup"
             app:popUpTo="@id/fragTestGeometricShapes"
             app:popUpToInclusive="true"/>
         <action
@@ -180,6 +154,7 @@
             app:destination="@id/fragFeedbackFail"
             app:popUpTo="@id/fragTestGeometricShapes"
             app:popUpToInclusive="true"/>
+
     </fragment>
 
     <fragment

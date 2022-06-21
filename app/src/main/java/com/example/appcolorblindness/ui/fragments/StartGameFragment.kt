@@ -26,9 +26,5 @@ class StartGameFragment: Fragment() {
         binding.ibPlay.setOnClickListener {
             findNavController().navigate(R.id.action_fragStartGame_to_fragInputName)
         }
-
-        binding.ibArrowBack.setOnClickListener {
-            findNavController().navigate(R.id.action_fragStartGame_to_fragAboutGame)
-        }
     }
 }
